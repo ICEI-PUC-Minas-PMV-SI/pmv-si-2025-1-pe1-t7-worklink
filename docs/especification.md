@@ -8,7 +8,41 @@ Caso deseje atribuir uma imagem a sua persona, utilize o site https://thisperson
 
 ## Personas
 
-Pedro Paulo tem 26 anos, é arquiteto recém-formado e autônomo. Pensa em se desenvolver profissionalmente através de um mestrado fora do país, pois adora viajar, é solteiro e sempre quis fazer um intercâmbio. Está buscando uma agência que o ajude a encontrar universidades na Europa que aceitem alunos estrangeiros.
+Persona 1
+
+Nome: Ana Souza.
+
+Idade: 30 anos.
+
+Profissão: Analista de Marketing.
+
+Localização: São Paulo, SP.
+
+Situação: Mora sozinha em um apartamento.
+
+Necessidade: Precisa contratar um eletricista de confiança para consertar seu chuveiro queimado.
+
+Desafios: Sente receio ao contratar profissionais autônomos devido à segurança. Precisa resolver o problema rapidamente, pois depende do chuveiro para manter sua higiene antes do trabalho.
+
+Objetivo: Encontrar um eletricista confiável e qualificado para reparar o chuveiro o quanto antes, garantindo segurança e eficiência no serviço.
+
+Persona 2
+
+Nome: Carlos Mendes.
+
+Idade: 35 anos.
+
+Profissão: Encanador autônomo.
+
+Localização: Belo Horizonte, MG.
+
+Situação: Recentemente desempregado, mas possui curso técnico em encanamento.
+
+Ação: Buscou o SEBRAE e abriu um CNPJ para atuar como profissional autônomo.
+
+Desafios: Encontrar clientes que precisem de seus serviços. Construir uma reputação no mercado e ganhar credibilidade. Conseguir uma renda estável para sustentar sua família.
+
+Objetivo: Conectar-se com clientes que precisam de serviços de encanamento, garantindo trabalho contínuo e estabilidade financeira.
 
 Enumere e detalhe as personas da sua solução. Para tanto, baseie-se tanto nos documentos disponibilizados na disciplina e/ou nos seguintes links:
 
@@ -26,14 +60,15 @@ Lembre-se que você deve ser enumerar e descrever precisamente e personalizada t
 
 Com base na análise das personas forma identificadas as seguintes histórias de usuários:
 
-Eu, como mulher que moro sozinha em meu apartamento e com receio na hora de contratar alguém autonomo, preciso de um eletricista que conserte meu chuveiro que queimou para que assim eu possa tomar meu banho e mantenha minha higiene, pois preciso sair para trabalhar.
-
-Eu como desempregado, mas tenho curso tecnico de encanador  buquei o SEBRAE e fiz a abeefrtura do meu CNPJ e agora preciso me conectar aos clientes que buscam o meu serviço, para que assim eu possa obter uma renda e sustentar minha familia.
-
-|EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
-|--------------------|------------------------------------|----------------------------------------|
-|Usuário do sistema  | Registrar minhas tarefas           | Não esquecer de fazê-las               |
-|Administrad       | Alterar permissões                 | Permitir que possam administrar contas |
+|EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                           |
+|--------------------|------------------------------------|--------------------------------------------------|
+|Cliente             | Cadastrar minha conta              | Que seja possível utilizar o sistema             |
+|Cliente             | Selecionar um profissional         | Que seja atendido em minha casa                  |
+|Cliente             | Selecionar uma forma de pagamento  | Que tenha flexibilidade na forma de pagamento    |
+|Profissional        | Cadastrar minha conta              | Que seja possível oferecer meu serviço           |
+|Profissional        | Aceitar serviços                   | Que eu escolha um de acordo com meu conhecimento |
+|Profissional        | Visualizar meus ganhos e pagamentos| Que eu gerencie minha renda                      |
+|Administrador       | Alterar permissões                 | Permitir que possam administrar contas           |
 
 Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.
 
