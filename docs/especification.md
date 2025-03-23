@@ -55,14 +55,15 @@ FRUSTAÇÕES:​
 
 CENARIO DE USO:​
 A torneira do banheiro das crianças começa a vazar e Marcos não quer que o problema piore. Ele abre o aplicativo, escolhe um encanador com boas avaliações e agenda o serviço para o fim da tarde, garantindo que esteja resolvido antes da esposa chegar do trabalho.
+
+
+
 Cliente 03 - IDOSO APOSENTADO
 NOME:  João Batista da Silva
 IDADE: ​72 anos
 PROFISSÃO: Aposentado(ex-mecânico)
 LOCALIZAÇÃO:  Curitiba- PR
 PERFIL: João é viúvo e mora sozinho em sua casa, onde vive há mais de 30 anos. Seus filhos moram em outras cidades, então ele precisa resolver problemas do dia a dia sozinho. Tem um smartphone e usa aplicativos básicos, mas não é muito familiarizado com tecnologia. Gosta de praticidade e preza por profissionais confiáveis, pois não quer lidar com serviços ruins ou golpes.
-
-
 
 
 NECESSIDADES: 
@@ -77,13 +78,14 @@ FRUSTAÇÕES:​
 
 
 CENÁRIO DE USO:​João percebe que o chuveiro está com problemas e não quer pedir ajuda aos filhos. Ele abre o aplicativo, escolhe um eletricista bem avaliado e consegue agendar a visita para o dia seguinte. O prestador de serviço chega pontualmente, explica o problema de forma clara e resolve tudo rapidamente.
+
+
 Cliente 04 - JOVEM PREOCUPADO
 NOME:  Camila Ribeiro
 IDADE: ​ 26 anos
 PROFISSÃO: Designer Gráfica 
 LOCALIZAÇÃO:  ​Rio de Janeiro - RJ
 PERFIL: Camila mora sozinha em um apartamento e trabalha em home office. Ela é muito cuidadosa com sua segurança e só contrata serviços que ofereçam garantias e boas avaliações. Evita ao máximo receber estranhos em casa e sempre busca formas seguras de verificar a identidade dos profissionais. Está acostumada a usar aplicativos para tudo, mas espera que eles tenham medidas de proteção robustas
-
 
 
 NECESSIDADES: 
