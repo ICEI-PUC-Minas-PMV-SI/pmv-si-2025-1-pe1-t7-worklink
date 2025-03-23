@@ -1,26 +1,34 @@
 ## Introdução
 
-WorkLink é um projeto que visa conectar prestadores de serviços com potenciais clientes atuando como uma plataforma onde ambas as partes possam interagir entre si.
+O WorkLink é um projeto inovador que tem como principal objetivo facilitar a conexão entre prestadores de serviços e potenciais clientes, criando um ambiente dinâmico e acessível para ambas as partes. A plataforma atua como um intermediário seguro e eficiente, permitindo que profissionais autônomos e empresas divulguem seus serviços, enquanto os clientes podem buscar, comparar e contratar de forma prática e confiável. Além de oferecer um espaço para interação direta, o WorkLink também disponibiliza recursos para avaliação de prestadores, acompanhamento de serviços e diferentes opções de pagamento, garantindo uma experiência transparente e satisfatória para todos os usuários.
 
 ## Contextualização
 
-Atualmente, é possível se notar dificuldade no ramo de prestação de serviços, não só por parte daqueles os quais contratam os serviços, mas também pelos próprios profissionais responsáveis por eles. 
+Atualmente, é possível notar diversas dificuldades no setor de prestação de serviços, afetando tanto os clientes que precisam contratar profissionais quanto os próprios prestadores que buscam oportunidades de trabalho. A falta de um sistema eficiente de intermediação torna o processo de contratação mais complexo, gerando insegurança e incerteza para ambas as partes.  
 
-Sem indicações ou informações prévias mediante o mercado local, a busca por prestadores de serviços é severamente impactada, principalmente para grupos vulneráveis.
+Sem indicações confiáveis ou informações prévias sobre o mercado local, a busca por prestadores de serviços se torna um grande desafio, impactando especialmente grupos vulneráveis, como idosos, mulheres que moram sozinhas e pessoas que não possuem redes de contato amplas para obter recomendações. Essa falta de visibilidade também prejudica os próprios profissionais, que enfrentam dificuldades para alcançar novos clientes e demonstrar a qualidade de seu trabalho.  
 
-Ademais, é possível observar a dificuldade que o profissional enfrenta para possibilitar a visibilidade de seu trabalho, acabando por usufruir de meios de comunicação assim como WhatsApp, Facebook e outros para a divulgação de seus serviços e comunicação com potenciais clientes.
+Diante desse cenário, muitos prestadores acabam recorrendo a meios informais, como WhatsApp, Facebook, Instagram e grupos de indicação para divulgar seus serviços e estabelecer contato com clientes em potencial. No entanto, esses métodos, apesar de úteis, nem sempre garantem um fluxo contínuo de trabalho ou a credibilidade necessária para a conquista de novos clientes. Dessa forma, torna-se evidente a necessidade de uma solução mais estruturada e eficiente para conectar prestadores de serviços a quem precisa de seus trabalhos de forma segura, acessível e confiável.
 
 ## Problema
 
-Pessoas Físicas necessitam ao longo do ano serviços domiciliares como: Montadores de moveis, eletricistas, encanadores e chaveiros, porém muitas vezes não possuem o contato ou indicação de pessoas de confiança (avaliadas por usuários e reputação) e os prestadores de serviços que nao possuem meios de pagamento para recebimento (maquininha) o que ocasiona perda do serviço.
+Ao longo do ano, muitas pessoas físicas precisam contratar diversos serviços domiciliares, como montadores de móveis, eletricistas, encanadores e chaveiros, seja para manutenções emergenciais, reformas ou ajustes no lar. No entanto, um dos principais desafios enfrentados por esses clientes é a falta de contato direto ou indicações confiáveis de profissionais qualificados. Sem referências de outros usuários ou um sistema de avaliação transparente, a escolha de um prestador de serviço se torna uma tarefa difícil, podendo gerar insegurança e dúvidas sobre a qualidade e a confiabilidade do trabalho oferecido.
+
+Além disso, a dificuldade não se restringe apenas aos clientes. Muitos prestadores de serviços autônomos enfrentam obstáculos para conquistar novos clientes devido à falta de visibilidade e credibilidade no mercado. Outro problema recorrente é a limitação nos meios de pagamento, uma vez que muitos desses profissionais não possuem maquininhas de cartão ou outras opções digitais, aceitando apenas dinheiro em espécie. Essa restrição pode levar à perda de oportunidades de trabalho, já que muitos clientes preferem realizar pagamentos com cartão, Pix ou boleto bancário por questão de segurança e praticidade.
 
 ## Objetivos
 
-Conectar através de portal web Pessoas Fisicas à pessoas Jurídicas para realização de pequenos serviços e reparos domiciliares.
+Desenvolver e disponibilizar um portal web que atue como uma ponte entre pessoas físicas e pessoas jurídicas, facilitando a conexão entre clientes que necessitam de pequenos serviços e reparos domiciliares e empresas especializadas ou profissionais autônomos qualificados. A plataforma oferecerá um ambiente intuitivo e seguro, onde os usuários poderão buscar, comparar e contratar prestadores de serviços com base em avaliações, reputação e especialização, garantindo maior confiança na escolha. Além disso, o portal contará com recursos que possibilitam o agendamento de serviços, diferentes formas de pagamento e acompanhamento do status da solicitação, proporcionando uma experiência eficiente e satisfatória para ambas as partes.
 
 ## Justificativa
 
-A proposta é oferecer aos clientes (Pessoas físicas) e aos prestadores de serviços (Pessoas jurídicas) cadastrados no portal e próximos a região da residência a contratação de pequenos serviços e reparos, assim possibilitamos fomentar  através de parcerias (SEBRAE), o empreendedorismo Brasileiro para os prestadores de serviço; e atender a dor dos clientes que não possuem contato de confiança quando precisam de pequenos serviços e reparos domiciliares, alem de facilitar o pagamento via site parcelado.
+A proposta do projeto é oferecer uma solução inovadora e acessível tanto para clientes (pessoas físicas) quanto para prestadores de serviços (pessoas jurídicas) cadastrados na plataforma, permitindo a contratação de pequenos serviços e reparos domiciliares de forma simples e eficiente. O portal será estruturado para conectar clientes com prestadores próximos à sua região, garantindo agilidade na prestação de serviços e maior conveniência no processo de escolha.  
+
+Além disso, ao estabelecer parcerias estratégicas com instituições como o SEBRAE, buscamos fomentar o empreendedorismo brasileiro, oferecendo aos prestadores de serviços uma plataforma segura para divulgar seus trabalhos e expandir seus negócios. Esse apoio visa não apenas profissionalizar os serviços prestados, mas também proporcionar aos empreendedores uma ferramenta de visibilidade, avaliação e crescimento.  
+
+Para os clientes, a principal vantagem será o acesso fácil e rápido a prestadores qualificados, especialmente para aqueles que enfrentam dificuldades para encontrar contatos de confiança para serviços como montagem de móveis, eletricista, encanador ou chaveiro. A plataforma resolve a dor de quem precisa de um serviço emergencial e não tem referências confiáveis, proporcionando transparência, segurança e comodidade.  
+
+Ademais, o portal facilitará a forma de pagamento, oferecendo aos clientes a opção de pagar seus serviços de forma parcelada, diretamente pelo site, o que contribui para a acessibilidade e conveniência do processo de contratação, tornando-o mais flexível e adequado às necessidades financeiras dos usuários.
 
 ## Público-Alvo do WorkLink
 
