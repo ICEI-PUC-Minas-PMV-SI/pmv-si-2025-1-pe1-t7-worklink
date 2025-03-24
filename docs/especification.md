@@ -181,15 +181,19 @@ CENÁRIO DE USO:​Roberto começa a usar o aplicativo para captar novos cliente
 
 Com base na análise das personas forma identificadas as seguintes histórias de usuários:
 
-|EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                           |
-|--------------------|------------------------------------|--------------------------------------------------|
-|Cliente             | Cadastrar minha conta              | Que seja possível utilizar o sistema             |
-|Cliente             | Selecionar um profissional         | Que seja atendido em minha casa                  |
-|Cliente             | Selecionar uma forma de pagamento  | Que tenha flexibilidade na forma de pagamento    |
-|Profissional        | Cadastrar minha conta              | Que seja possível oferecer meu serviço           |
-|Profissional        | Aceitar serviços                   | Que eu escolha um de acordo com meu conhecimento |
-|Profissional        | Visualizar meus ganhos e pagamentos| Que eu gerencie minha renda                      |
-|Administrador       | Alterar permissões                 | Permitir que possam administrar contas           |
+|EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE`      |PARA ... `MOTIVO/VALOR`                               |
+|--------------------|-----------------------------------------|------------------------------------------------------|
+|Cliente             | Cadastrar minha conta                   | Que seja possível utilizar o sistema                 |
+|Cliente             | Encontrar profissionais                 | Que eu possa contratar um serviço                    |
+|Cliente             | Avaliar os profissionais                | Que outros clientes possam contrata-lo com confiança |
+|Cliente             | Agendar o atendimento                   | Que eu possa ser atendido no momento correto         |
+|Cliente             | Selecionar uma forma de pagamento       | Que tenha flexibilidade na forma de pagamento        |
+|Profissional        | Cadastrar minha conta                   | Que seja possível oferecer meu serviço               |
+|Profissional        | Aceitar serviços                        | Que eu escolha um de acordo com meu conhecimento     |
+|Profissional        | Visualizar meus ganhos e pagamentos     | Que eu gerencie minha renda                          |
+|Administrador       | Revisar os documentos dos profissionais | Garantir a segurança dos meus cliente                |
+|Administrador       | Intermediar disputas                    | Garantir a confiabilidade e boa experiência          |
+|Administrador       | Analisar e bloquear usuários            | Garantir um ambiente seguro e confiável              |
 
 Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.
 
