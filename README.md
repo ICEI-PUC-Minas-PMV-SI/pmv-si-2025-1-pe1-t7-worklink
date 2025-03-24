@@ -24,7 +24,7 @@ O Worklink além de atender um problema existente e trazer soluções aos nossos
 * Josias Nicácio de Oliveira
 * Iago Maldonado Aguiar Oliveira
 * Igor Malfacini Dutra
-* Luiz
+* Luiz Henrique Baptista Procópio Valle
 * Marcelo Freitas
 
 
