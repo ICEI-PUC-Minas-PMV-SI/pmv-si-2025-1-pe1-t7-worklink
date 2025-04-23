@@ -51,8 +51,24 @@ Explique as guias de estilo utilizadas no seu projeto.
 
 ## Cores
 
-Apresente a paleta de cores que será utilizada. Uma ferramenta interessante para a criação de palestas de cores é o *Adobe Color* ([https://color.adobe.com/pt/create/color-wheel](https://color.adobe.com/pt/create/color-wheel)).
+A paleta de cores do sistema WorkLink é composta por:
 
+- **Cor Primária**: Laranja (#FF7A29) - Utilizada no cabeçalho principal, elementos de destaque e ações secundárias
+  
+- **Cor Secundária**: Azul (#3B67F5) - Aplicada em botões de ação principal, links e elementos de destaque secundários
+
+- **Cores Complementares**:
+  - Branco (#FFFFFF) - Fundo de conteúdo, textos sobre fundos escuros
+  - Cinza Claro (#F2F5FB) - Fundo alternativo e áreas de conteúdo
+  - Cinza Médio (#AAAAAA) - Textos secundários e bordas
+  - Cinza Escuro (#333333) - Textos principais
+
+- **Cores Funcionais**:
+  - Verde (#4CD964) - Indicador de disponibilidade, sucesso, confirmação
+  - Vermelho (#FF3B30) - Indicador de indisponibilidade, erro, alertas
+  - Laranja Claro (#FFA500) - Indicador de compromisso agendado
+
+Esta paleta foi escolhida para transmitir confiança (azul) e energia/entusiasmo (laranja), criando uma experiência visual agradável e coerente em toda a plataforma, baseado na teoria das cores.
 
 ## Tipografia
 
