@@ -3,19 +3,31 @@
 
 Visão geral da interação do usuário pelas telas do sistema e protótipo interativo das telas com as funcionalidades que fazem parte do sistema (wireframes).
 
- Apresente as principais interfaces da plataforma. Discuta como ela foi elaborada de forma a atender os requisitos funcionais, não funcionais e histórias de usuário abordados nas <a href="2-Especificação do Projeto.md"> Documentação de Especificação</a>.
+# Landing
+![Landing](img/pages/landing.png)
+A página de Landing foi elaborada com o propósito de ser chamativa e atrativa, apresentando o WorkLink, o seu propósito e características.
+Atende os requisitos não funcionais RNF-001 mediante responsividade e o RNF-004, mediante acessibilidade e fácil compreensão.
+
+# Login
+![Login](img/pages/login.png)
+A pagina de Login foi elaborada de forma simples, buscando não ser invasiva ao usuário e solicitando apenas as informações necessárias para acessar a plataforma.
+Não há funcionalidade, porém busca atender os requisitos não funcionais RNF-002	mediante criptografia e o RNF-005	mediante a realização de requisiçoes de forma rápida e eficiente.
+
+# Registro
+![Registro](img/pages/register.png)
+A pagina de Registro/Cadastro foi elaborada para não solicitar tantas informações do usuário, visto que isso poderia ser exaustante e frustrante para o mesmo. Portanto, o cadastro é um só para ambos prestadores de serviços e clientes, com o cadastro de Prestador de Serviços sendo facultativo adiante na plataforma.
+
+# Serviços (Página Principal)
+![Servicos](img/pages/serviços.png)
+A pagina de Serviços foi elaborada para auxiliar o usuário a buscar exatamente o serviço o qual procura, portando categorias de fácil compreensão e acesso, permitindo a indexação dos tipos de serviços disponíveis.
+
+# Painel do Prestador
+![Painel do Prestador](img/pages/painel.png)
+O painel do prestador foi elaborado com o prestador em mente, portando ferramentas para auxiliar a sua comunicação com seus clientes e organização de seu trabalho.
 
 ## User Flow
 
-![Exemplo de UserFlow](img/userflow.jpg)
-
-Fluxo de usuário (User Flow) é uma técnica que permite ao desenvolvedor mapear todo fluxo de telas do site ou app. Essa técnica funciona para alinhar os caminhos e as possíveis ações que o usuário pode fazer junto com os membros de sua equipe.
-
-> **Links Úteis**:
-> - [User Flow: O Quê É e Como Fazer?](https://medium.com/7bits/fluxo-de-usu%C3%A1rio-user-flow-o-que-%C3%A9-como-fazer-79d965872534)
-> - [User Flow vs Site Maps](http://designr.com.br/sitemap-e-user-flow-quais-as-diferencas-e-quando-usar-cada-um/)
-> - [Top 25 User Flow Tools & Templates for Smooth](https://www.mockplus.com/blog/post/user-flow-tools)
-
+![UserFlow](img/charts/userflow.png)
 
 ## Wireframes
 
