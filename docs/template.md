@@ -70,10 +70,47 @@ Esta paleta foi escolhida para transmitir confiança (azul) e energia/entusiasmo
 
 ## Tipografia
 
-- Título de página: Poppins
-- Título de Seção: Poppins
-- Corpo de Texto: Poppins
+**Fontes Utilizadas:**
 
+- **Fonte Principal**: Poppins
+
+**Aplicação e Função:**
+
+- **Título de Página**:
+  - Fonte: Poppins Regular
+  - Tamanho: 64px
+  - Exemplo: "Junte-se a maior plataforma de prestadores de serviços", "Principais Serviços"
+  - Função: Identificar claramente a página atual e comunicar o propósito principal
+
+- **Título de Seção**:
+  - Fonte: Poppins Bold
+  - Tamanho: 22px
+  - Exemplo: "Linha do Tempo", "Calendário", "Categorias"
+  - Função: Organizar e separar diferentes áreas de conteúdo dentro da mesma página
+
+- **Rótulos de Componentes**:
+  - Fonte: Poppins Bold
+  - Tamanho: 40px
+  - Exemplo: "Nome Completo", "Endereço de E-mail", "Senha"
+  - Função: Identificar campos de formulário, botões e outros elementos interativos
+
+- **Corpo de Texto**:
+  - Fonte: Open Sans Regular
+  - Tamanho: 24px
+  - Exemplo: Descrições, informações explicativas, descrições de serviços
+  - Função: Apresentar conteúdo informativo de forma clara e legível
+
+- **Texto Secundário**:
+  - Fonte: Poppins Regular
+  - Tamanho: 24px
+  - Exemplo: "Insira suas informações para prosseguir", datas, informações complementares
+  - Função: Fornecer contexto ou instruções adicionais
+
+**Características Gerais:**
+- Uso de espaçamento adequado entre linhas (1.5x) para melhorar a legibilidade
+- Contraste adequado entre texto e fundo para facilitar a leitura
+- Hierarquia visual clara para orientar o usuário pela página
+- Consistência no uso das fontes em todo o sistema para reforçar a identidade visual
 ## Iconografia
 
 - [Icones do FontAwesome](https://fontawesome.com/)
