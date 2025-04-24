@@ -35,7 +35,7 @@ São protótipos usados em design de interface para sugerir a estrutura de um si
 
 ### Exemplo
 
-A tela inicial apresenta um menu lateral com as principais seções do portal, enquanto a navigation bar, ao topo, apresenta informações de envio de imagens ou navegação pela galeria de fotos. A área central apresenta a galeria de fotos na forma de uma grade. Nesta tela, são apresentados os seguintes requisitos
+A tela inicial exibe uma barra de navegação superior com dois botões, sugerindo funcionalidades como envio de conteúdo ou acesso a uma galeria. Abaixo, à esquerda, destaca-se um título em português ("espaço reservado para o texto de título") acompanhado por um botão de ação ("Botão persuasivo") e um link ("link para mais informações"). À direita do título, um espaço reservado para uma imagem é indicado por um ícone de paisagem com uma figura humana. A parte inferior da tela é dividida em duas seções retangulares com títulos em português: "FeedBack de Usuários" à esquerda e "Upgrades e Updates" à direita. Um menu lateral com três itens ("Menu Item 1", "Menu Item 2", "Menu Item 3") está posicionado no canto superior esquerdo, abaixo de um espaço reservado para um logo.
 
 ![Exemplo de Wireframe](/docs/img/wireframe.png)
 
