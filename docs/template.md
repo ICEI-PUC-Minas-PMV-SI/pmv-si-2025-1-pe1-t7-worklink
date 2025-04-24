@@ -39,7 +39,7 @@ Layout padrão do site (HTML e CSS) que será utilizado em todas as páginas com
 
 - **Vermelho**: Dias em que o prestador não trabalha (indisponível)
 - **Verde**: Dias em que o prestador trabalha e está com agenda livre (disponível)
-- **Laranja**: Dias em que o prestador já tem compromissos/serviços agendados (parcialmente disponível)
+- **Laranja**: Dias em que o prestador já tem compromissos/serviços agendados
 
  **Ilustrações**: Utilizadas estrategicamente nas páginas de entrada e cadastro para reforçar a mensagem
  
@@ -95,7 +95,7 @@ Esta paleta foi escolhida para transmitir confiança (azul) e energia/entusiasmo
   - Função: Identificar campos de formulário, botões e outros elementos interativos
 
 - **Corpo de Texto**:
-  - Fonte: Open Sans Regular
+  - Fonte: Poppins Regular
   - Tamanho: 24px
   - Exemplo: Descrições, informações explicativas, descrições de serviços
   - Função: Apresentar conteúdo informativo de forma clara e legível
