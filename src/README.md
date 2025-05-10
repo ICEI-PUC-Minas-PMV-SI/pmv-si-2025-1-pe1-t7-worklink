@@ -13,3 +13,7 @@ O site em HTML/CSS/JS é um projeto estático, logo pode ser utilizado tanto em 
 ### [0.1.1] - 08/05/2025
 #### Adicionado
 - Página de Serviços
+
+### [0.1.2] - 10/05/2025
+### Adicionado
+- Página de Cadastro
