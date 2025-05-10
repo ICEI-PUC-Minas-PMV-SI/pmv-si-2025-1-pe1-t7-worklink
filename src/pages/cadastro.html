@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../styles/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+  <title>Cadastro</title>
+</head>
+<body>
+  <div class="top-bar">
+    <img src="../assets/worklinklogo.png" class="logo" alt="Worklink Logo">
+    <div class="menu-container">
+      <span class="menu-item">Início</span>
+      <a href="servicos.html" class="menu-item">Serviços</a>
+      <span class="menu-item">Sobre</span>
+    </div>
+    <div class="buttons-container">
+      <button class="entrar-btn">Entrar</button>
+      <button class="cadastrar-btn">Cadastrar</button>
+    </div>
+  </div>
+
+  <div class="main-content">
+    <div class="bg">
+        <p class="bg-text">
+            Encontre seus clientes e alcance novos horizontes para o <span class="highlight">seu negócio.</span>
+        </p>
+        <img src="../assets/novoshorizontes.png" alt="Novos horizontes" class="bg-image">
+    </div>
+
+    <div class="form-section">
+      <div class="form-inner">
+        <h1 class="titulo-login">Cadastre-se no WorkLink</h1>
+        <p class="subtitulo-login">Insira suas informações para prosseguir.</p>
+        <div class="form-container">
+            <label class="label" for="nome">Nome Completo</label>
+            <input type="text" id="nome" class="input">
+            <label class="label-email" for="email">Endereço de E-mail</label>
+            <input type="email" id="email" class="input-email">
+            <label class="label" for="id">CPF / CNPJ</label>
+            <input pattern="(\d{3}\.?\d{3}\.?\d{3}-?\d{2})|(\d{2}\.?\d{3}\.?\d{3}/?\d{4}-?\d{2})" type="text" id="id" class="input">
+            <label class="label-senha" for="senha">Senha</label>
+            <input type="password" id="senha" class="input-senha">
+            <label class="label" for="senha">Confirmar a Senha</label>
+            <input type="password" id="cSenha" class="input">
+            <button class="entrar-novo-btn">Cadastrar</button>
+            <button class="entrar-google-btn">
+                <img src="../assets/google.png" alt="Google" class="google-icon">
+                Cadastrar com o <span class="google-bold">Google</span>
+            </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

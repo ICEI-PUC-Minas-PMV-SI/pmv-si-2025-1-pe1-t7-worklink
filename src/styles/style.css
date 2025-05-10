@@ -116,10 +116,10 @@ body {
 .form-container {
   display: flex;
   flex-direction: column;
-  gap: 10px;
   width: 100%;
 }
 
+.label,
 .label-email,
 .label-senha {
   color: rgba(0, 0, 0, 0.45);
@@ -129,6 +129,7 @@ body {
   width: 100%;
 }
 
+.input,
 .input-email,
 .input-senha {
   width: 100%;
@@ -175,6 +176,10 @@ body {
   font-size: 14px;
   font-weight: 500;
   color: rgba(0, 0, 0, 0.45);
+}
+
+button {
+  font-family: Poppins;
 }
 
 .entrar-novo-btn {
