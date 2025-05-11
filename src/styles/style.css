@@ -337,3 +337,92 @@ button {
   padding: 0 0 0 1rem;
   font-weight: 700;
 }
+
+.landing-banner {
+  display: flex;
+  justify-content: center;
+  background-color: #3862CC;
+  height: 400px;
+  width: 100%;
+}
+
+.landing-banner-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 20px;
+}
+
+.landing-banner-text {
+  color: #fff;
+  font-size: 64px;
+  font-weight: normal;
+}
+
+.landing-banner-highlight {
+  color: #F28435;
+  font-size: 64px;
+  font-weight: bold;
+}
+
+.landing-banner-nav {
+  padding-top: 20px;
+}
+
+.landing-banner .cadastrar-btn {
+  background-color: #5E84E2;
+  width: auto;
+  height: auto;
+  padding: 15px 50px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.landing-banner-nav span a {
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.5) !important;
+}
+
+a {
+  text-decoration: none;
+}
+
+.landing-banner-art {
+  display: flex;
+  max-height: 400px;
+}
+
+.selling-points {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  gap: 128px;
+  width: 100%;
+  padding: 80px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.card-title {
+  font-size: 24px;
+  color: rgba(0, 0, 0, 0.75);
+  font-weight: bold;
+}
+
+.card-description {
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.50);
+}
+
+.card-icon img {
+  max-height: 100px;
+}
