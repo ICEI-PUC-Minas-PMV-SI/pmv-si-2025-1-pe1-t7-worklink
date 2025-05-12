@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>WorkLink - Home</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="../styles/style.css">
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f4f6fa;
+    }
+
+    .top-bar {
+      background-color: #f58220;
+      padding: 0.8rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .top-bar .logo {
+      font-weight: bold;
+      color: #000;
+    }
+
+    .top-bar .menu a {
+      color: white;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .top-bar .menu a:hover {
+      text-decoration: underline;
+    }
+
+    .top-bar .btn {
+      margin-left: 0.5rem;
+    }
+
+    .cadastrar-btn {
+      display: inline-block;
+      font-weight: bold;
+      padding: 0.5rem 1rem; 
+      text-align: center;
+      text-decoration: none;
+      border-radius: 5px;
+      border: none; 
+      cursor: pointer;
+    }
+
+    .hero-section {
+      background-color: #3b6fd2;
+      color: white;
+      padding: 3rem 2rem;
+      text-align: center;
+      position: relative;
+    }
+
+    .hero-section h1 {
+      font-size: 2rem;
+    }
+
+    .hero-section .highlight {
+      color: #f58220;
+      font-weight: 700;
+    }
+
+    .hero-section .btn-cadastrar {
+      background-color: #a1b4f1;
+      border: none;
+      color: white;
+      font-weight: bold;
+      padding: 0.5rem 1.2rem;
+      border-radius: 10px;
+      margin-top: 1rem;
+    }
+
+    .workers-img {
+      max-width: 250px;
+      position: absolute;
+      right: 10%;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    .info-section {
+      background-color: #e7ebfc;
+      padding: 3rem 1rem;
+      text-align: center;
+    }
+
+    .info-section .info-item {
+      margin-bottom: 2rem;
+    }
+
+    .info-section h5 {
+      font-weight: 700;
+    }
+
+    .info-section p {
+      margin: 0;
+    }
+
+    .info-section .info-item img.mb-3 {
+      width: 70px; 
+      height: auto; 
+    }
+    
+    .hero-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center center;
+    }
+
+    @media (max-width: 768px) {
+      .hero-image img {
+        width: 100%;
+        height: 100%;
+        object-position: center; 
+      }
+    }
+
+
+  </style>
+</head>
+
+<body>
+
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <img src="../assets/worklinklogo.png" class="logo" alt="Worklink Logo">
+    <div class="menu-container">
+      <a href="langing.html" class="menu-item">Início</a>
+      <a href="servicos.html" class="menu-item">Serviços</a>
+      <span class="menu-item">Sobre</span>
+    </div>
+    <div class="buttons-container">
+      <button class="entrar-btn">Entrar</button>
+      <a href="cadastro.html" class="cadastrar-btn">Cadastrar</a>
+
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero-section text-white position-relative py-5" style="background-color: #386de3;">
+    <div class="container d-flex align-items-center justify-content-between flex-wrap">
+      <div class="hero-text" style="max-width: 600px;">
+        <h1 class="display-5 fw-bold">Junte-se à maior plataforma de <span class="highlight text-warning">prestadores de serviços.</span></h1>
+        <div class="mt-4 d-flex align-items-center">
+          <a href="cadastro.html" class="btn btn-light text-primary fw-bold px-4 me-3">Cadastrar</a>
+          <span class="text-white-50">saiba mais sobre o WorkLink</span>
+        </div>
+      </div>
+      <div class="hero-image mt-4 mt-md-0">
+        <img src="../assets/trabalhadores.png" alt="Trabalhadores" class="img-fluid">
+      </div>
+    </div>
+  </section>
+
+  <!-- Info Section -->
+  <section class="info-section">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-md-4 info-item">
+          <img src="../assets/cartao.png" alt="Cartão" class="mb-3">
+          <h5>Pague com Cartão</h5>
+          <p>Compre em até 10x sem juros com o seu cartão!</p>
+        </div>
+        <div class="col-md-4 info-item">
+          <img src="../assets/pix.png" alt="PIX" class="mb-3">
+          <h5>Pague com PIX</h5>
+          <p>Pague à vista com PIX e com desconto!</p>
+        </div>
+        <div class="col-md-4 info-item">
+          <img src="../assets/seguranca.png" alt="Segurança" class="mb-3">
+          <h5>Qualidade e Segurança</h5>
+          <p>Serviços feitos com qualidade e segurança.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
