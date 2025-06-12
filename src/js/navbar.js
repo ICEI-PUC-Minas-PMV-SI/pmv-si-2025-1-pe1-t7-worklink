@@ -6,8 +6,10 @@ const info = document.querySelector('#navbar #info');
 if(loggedIn)
 {
     var user = JSON.parse(localStorage.getItem("sessionUser"));
+    var fsName = `${user["name"].split(" ")[0]} ${user["name"].split(" ")[1]}`;
+
     info.innerHTML = `<div class="navbar-text label-navbar ms-auto d-flex align-items-center">
-        Bem-vindo, ${user["name"]}
+        Bem-vindo, ${fsName}
         <img src="../assets/perfil.png" alt="Perfil" class="rounded-circle border border-3 border-warning ms-2" style="width: 48px; height: 48px;">
         <div class="px-3"><a id="logout" href="#">Sair</a></div>
     </div>`;
@@ -23,6 +25,6 @@ document.addEventListener("click", function(event)
     {
         event.preventDefault();
         localStorage.removeItem("sessionUser");
-        window.location.replace("landing.html");
+        window.location.replace("index.html");
     }
 });
