@@ -6,27 +6,25 @@
   <link rel="stylesheet" href="..\styles\painel.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
   <title>Agenda</title>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script type="module" src="../js/main.js"></script>
+  <script type="module" src="../js/navbar.js"></script>
 </head>
 <body>
 
-  <header class="top-bar">
-    <img src="..\assets\worklinklogo.png" class="logo" alt="Worklink Logo">
-    <nav class="menu-container">
-      <span class="menu-item">Início</span>
-      <span class="menu-item">Serviços</span>
-      <span class="menu-item">Sobre</span>
-    </nav>
-    
-    <div class="user-container">
-  <span class="welcome-text">Bem-vindo, Hudson Gomes</span>
-  <img src="..\assets\perfil.png" class="user-icon" alt="Usuário">
-  <div class="notification-icon">
-    <img src="..\assets\icons-notificação.png" alt="Notificações">
-    <span class="notification-badge">2</span>
+  <div id="navbar" class="top-bar">
+    <img src="../assets/worklinklogo.png" class="logo" alt="Worklink Logo">
+    <div class="menu-container">
+      <a href="landing.html" class="menu-item">Início</a>
+      <a href="servicos.html" class="menu-item">Serviços</a>
+      <a href="#" class="menu-item">Sobre</a>
+    </div>
+    <div id="info" class="buttons-container">
+      <button class="entrar-btn">Entrar</button>
+      <button class="cadastrar-btn">Cadastrar</button>
+    </div>
   </div>
-</div>
 
-  </header>
 
   <main>
     <section class="agenda">

@@ -59,6 +59,8 @@ body {
   letter-spacing: -0.36px;
   border: none;
   cursor: pointer;
+  text-align: center;
+  line-height: 48px;
 }
 
 .cadastrar-btn {
@@ -72,6 +74,8 @@ body {
   letter-spacing: -0.36px;
   border: none;
   cursor: pointer;
+  text-align: center;
+  line-height: 48px;
 }
 
 .main-content {
@@ -403,7 +407,7 @@ a {
   padding: 80px;
 }
 
-.card {
+.card-wl {
   display: flex;
   flex-direction: column;
   justify-content: center;

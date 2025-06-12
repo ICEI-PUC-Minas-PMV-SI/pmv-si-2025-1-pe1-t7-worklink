@@ -6,20 +6,25 @@
   <link rel="stylesheet" href="../styles/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
   <title>Login</title>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script type="module" src="../js/authentication.js"></script>
+  <script type="module" src="../js/navbar.js"></script>
+
 </head>
 <body>
-  <div class="top-bar">
+  <div id="navbar" class="top-bar">
     <img src="../assets/worklinklogo.png" class="logo" alt="Worklink Logo">
     <div class="menu-container">
-      <span class="menu-item">Início</span>
+      <a href="landing.html" class="menu-item">Início</a>
       <a href="servicos.html" class="menu-item">Serviços</a>
-      <span class="menu-item">Sobre</span>
+      <a href="#" class="menu-item">Sobre</a>
     </div>
-    <div class="buttons-container">
+    <div id="info" class="buttons-container">
       <button class="entrar-btn">Entrar</button>
       <button class="cadastrar-btn">Cadastrar</button>
     </div>
   </div>
+
 
   <div class="main-content">
     <div class="form-section">
