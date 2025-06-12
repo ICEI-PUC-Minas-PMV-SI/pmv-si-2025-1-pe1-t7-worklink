@@ -18,7 +18,7 @@
   <div id="navbar" class="top-bar">
     <img src="../assets/worklinklogo.png" class="logo" alt="Worklink Logo">
     <div class="menu-container">
-      <a href="landing.html" class="menu-item">Início</a>
+      <a href="index.html" class="menu-item">Início</a>
       <a href="servicos.html" class="menu-item">Serviços</a>
       <a href="#" class="menu-item">Sobre</a>
     </div>
@@ -29,40 +29,42 @@
   </div>
 
     <div class="container mt-5">
+        <!-- Cards de Principais Serviços -->
         <h2 class="fw-bold mb-4">Principais Serviços</h2>
         <div class="row g-4">
             <div class="col-md-3">
-                <div class="position-relative service-card">
-                    <img src="../assets/mecanico.png" alt="Mecânico">
-                    <div class="overlay"></div>
-                    <div class="card-title-overlay">Mecânico</div>
-                </div>
+            <div class="position-relative service-card category-card" data-category="Mecânico" style="cursor:pointer;">
+                <img src="../assets/mecanico.png" alt="Mecânico">
+                <div class="overlay"></div>
+                <div class="card-title-overlay">Mecânico</div>
+            </div>
             </div>
             <div class="col-md-3">
-                <div class="position-relative service-card">
-                    <img src="../assets/eletricista.png" alt="Eletricista">
-                    <div class="overlay"></div>
-                    <div class="card-title-overlay">Eletricista</div>
-                </div>
+            <div class="position-relative service-card category-card" data-category="Eletricista" style="cursor:pointer;">
+                <img src="../assets/eletricista.png" alt="Eletricista">
+                <div class="overlay"></div>
+                <div class="card-title-overlay">Eletricista</div>
+            </div>
             </div>
             <div class="col-md-3">
-                <div class="position-relative service-card">
-                    <img src="../assets/chaveiro.png" alt="Chaveiro">
-                    <div class="overlay"></div>
-                    <div class="card-title-overlay">Chaveiro</div>
-                </div>
+            <div class="position-relative service-card category-card" data-category="Chaveiro" style="cursor:pointer;">
+                <img src="../assets/chaveiro.png" alt="Chaveiro">
+                <div class="overlay"></div>
+                <div class="card-title-overlay">Chaveiro</div>
+            </div>
             </div>
             <div class="col-md-3">
-                <div class="position-relative service-card">
-                    <img src="../assets/encanador.png" alt="Encanador">
-                    <div class="overlay"></div>
-                    <div class="card-title-overlay">Encanador</div>
-                </div>
+            <div class="position-relative service-card category-card" data-category="Encanador" style="cursor:pointer;">
+                <img src="../assets/encanador.png" alt="Encanador">
+                <div class="overlay"></div>
+                <div class="card-title-overlay">Encanador</div>
+            </div>
             </div>
         </div>
 
         <div class="my-5"></div>
 
+        <!-- Listagem de Serviços -->
         <div class="row">
             <div class="col-md-3">
                 <div class="category-title">Categorias</div>
@@ -80,56 +82,66 @@
                 </ul>
             </div>
 
+            <!-- Listagem de Prestadores de Serviços -->
             <div class="col-md-9">
-                <div class="provider-card d-flex align-items-center">
-                    <img src="../assets/paulaMecanica.png" alt="Mecânica Paula" class="provider-img me-3">
-                    <div class="flex-grow-1">
-                        <h5 class="fw-bold">Mecânica Paula</h5>
-                        <p>Deu problema no carro justo na hora do trampo? Conte comigo!</p>
-                    </div>
-                    <div class="rating-stars d-flex gap-1">
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i>
-                    </div>
-                </div>
-
-                <div class="provider-card d-flex align-items-center">
-                    <img src="../assets/robsonMecanico.png" alt="Robson Mecânico" class="provider-img me-3">
-                    <div class="flex-grow-1">
-                        <h5 class="fw-bold">Robson Mecânico</h5>
-                        <p>Seu mecânico amigo desde 1984.</p>
-                    </div>
-                    <div class="rating-stars d-flex gap-1">
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-half"></i>
-                    </div>
-                </div>
-
-                <div class="provider-card d-flex align-items-center">
-                    <img src="../assets/geraldoMecanico.png" alt="Mecânico Geraldo" class="provider-img me-3">
-                    <div class="flex-grow-1">
-                        <h5 class="fw-bold">O melhor mecânico</h5>
-                        <p>O melhor mecânico da cidade!</p>
-                    </div>
-                    <div class="rating-stars d-flex gap-1">
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star"></i>
-                    </div>
+                <div id="providers-list">
                 </div>
             </div>
         </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="module">
+    import { listaFuncionarios } from '../js/services.js';
+
+    function createProviderCard(worker) {
+    return `
+        <div class="provider-card d-flex align-items-center mb-3">
+            <img src="${worker.caminho_img}" alt="${worker.name}" class="provider-img me-3">
+            <div class="flex-grow-1">
+            <h5 class="fw-bold">${worker.name}</h5>
+            <p>${worker.descricao}</p>
+            </div>
+            <div class="rating-stars d-flex gap-1">
+            ${[...Array(5)].map((_, i) =>
+                `<i class="bi ${i < worker.estrelas ? 'bi-star-fill' : 'bi-star'}"></i>`
+            ).join('')}
+            </div>
+        </div>
+    `;
+    }
+
+    const categoriaInicial = "Mecânico";
+    function renderProviders(categoria) {
+    const container = document.getElementById('providers-list');
+    container.innerHTML = listaFuncionarios
+        .filter(w => w.tipoServico === categoria)
+        .map(createProviderCard)
+        .join('');
+    }
+
+    renderProviders(categoriaInicial);
+
+    document.querySelectorAll('.category-list li').forEach(li => {
+      li.addEventListener('click', function() {
+         document.querySelectorAll('.category-list li').forEach(el => el.classList.remove('active'));
+         this.classList.add('active');
+         renderProviders(this.textContent);
+      });
+    });
+
+    document.querySelectorAll('.category-card').forEach(card => {
+        card.addEventListener('click', function() {
+        const categoria = this.getAttribute('data-category');
+        renderProviders(categoria);
+        document.querySelectorAll('.category-list li').forEach(li => {
+            li.classList.toggle('active', li.textContent === categoria);
+        });
+        });
+    });
+    </script>
 </body>
 
 </html>
+
+

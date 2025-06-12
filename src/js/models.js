@@ -13,7 +13,12 @@ export class User
     }
 }
 
-export class WorkerUser extends User
-{
-    // implementar serviços
+export class WorkerUser extends User {
+    constructor(name, email, password, doc, descricao, tipoServico, estrelas, caminhoImg) {
+        super(name, email, password, doc); 
+        this.descricao = descricao;
+        this.tipoServico = tipoServico; 
+        this.estrelas = estrelas;
+        this.caminho_img = caminhoImg;
+    }
 }

@@ -23,6 +23,6 @@ document.addEventListener("click", function(event)
     {
         event.preventDefault();
         localStorage.removeItem("sessionUser");
-        window.location.replace("landing.html");
+        window.location.replace("index.html");
     }
 });
