@@ -20,8 +20,8 @@
       <a href="#" class="menu-item">Sobre</a>
     </div>
     <div id="info" class="buttons-container">
-      <button class="entrar-btn">Entrar</button>
-      <button class="cadastrar-btn">Cadastrar</button>
+      <a href="login.html" class="entrar-btn">Entrar</a>
+      <a href="cadastro.html" class="cadastrar-btn">Cadastrar</a>
     </div>
   </div>
 
@@ -32,19 +32,21 @@
         <h1 class="titulo-login">Bem-vindo de volta!</h1>
         <p class="subtitulo-login">Insira suas informações para prosseguir.</p>
         <div class="form-container">
-          <label class="label-email" for="email">Endereço de E-mail</label>
-          <input type="email" id="email" class="input-email">
-          <label class="label-senha" for="senha">Senha</label>
-          <input type="password" id="senha" class="input-senha">
-          <div class="lembrar-container">
-            <input type="checkbox" id="lembrar" class="lembrar-checkbox">
-            <label for="lembrar" class="lembrar-label">Lembre de mim</label>
-          </div>
-          <button class="entrar-novo-btn">Entrar</button>
-          <button class="entrar-google-btn">
-            <img src="../assets/google.png" alt="Google" class="google-icon">
-            Entrar com o <span class="google-bold">Google</span>
-          </button>
+          <form id="formLogin">
+            <label class="label-email" for="email">Endereço de E-mail</label>
+            <input type="email" id="email" class="input-email">
+            <label class="label-senha" for="senha">Senha</label>
+            <input type="password" id="senha" class="input-senha">
+            <div class="lembrar-container">
+              <input type="checkbox" id="lembrar" class="lembrar-checkbox">
+              <label for="lembrar" class="lembrar-label">Lembre de mim</label>
+            </div>
+            <button class="entrar-novo-btn">Entrar</button>
+            <button class="entrar-google-btn">
+              <img src="../assets/google.png" alt="Google" class="google-icon">
+              Entrar com o <span class="google-bold">Google</span>
+            </button>
+          </form>
         </div>
       </div>
     </div>
