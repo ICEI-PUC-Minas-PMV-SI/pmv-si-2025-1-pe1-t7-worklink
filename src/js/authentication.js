@@ -57,9 +57,6 @@ function register(name, email, password, confirm, doc)
 
 function saveSession(user)
 {
-    if(user.password !== null)
-        user.password = "";
-
     localStorage.setItem("sessionUser", user);
 }
 
