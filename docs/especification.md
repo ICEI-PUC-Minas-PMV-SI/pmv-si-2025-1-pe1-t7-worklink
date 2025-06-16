@@ -173,6 +173,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RF-006| O sistema deve permitir que os usuários deixem avaliações sobre os serviços e prestadores responsáveis pelos mesmos. | MÉDIA |
 |RF-007| O sistema deve permitir a moderação de usuários cadastrados, permitindo a interrupção de serviço para malfeitores e acompanhamento. | MÉDIA |
 |RF-008| O sistema deve permitir a intermediação de disputas (reclamações, ocorrências) através da plataforma. | MÉDIA |
+|RF-009| O sistema deve permitir login de usuários cadastrados. | ALTA |
 
 ### Requisitos não Funcionais
 
