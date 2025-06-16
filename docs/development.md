@@ -9,7 +9,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não-funcionais q
 |ID    | Descrição do Requisito | Responsável | Artefato Criado |
 |------|------------------------|------------|-----------------|
 |RF-001| O sistema deve permitir o cadastro de ambos prestadores de serviços e usuários normais. | Iago | cadastro.html, authentication.js |
-|RF-003| O sistema deve possibilitar a organização da agenda de serviços e a disponibilidade do prestador responsável. | Hudson | painel.html |
+|RF-003| O sistema deve possibilitar a organização da agenda de serviços e a disponibilidade do prestador responsável. | Hudson | painel.html agenda.js agenda.css |
 |RF-004| O sistema deve permitir a indexação de diferentes tipos de serviços a serem ofertados ao usuário. | Igor | servicos.html |
 |RF-009|O sistema deve permitir login de usuários cadastrados. | Josias | login.html, authentication.js |
 
