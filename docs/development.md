@@ -8,8 +8,10 @@ As tabelas que se seguem apresentam os requisitos funcionais e não-funcionais q
 
 |ID    | Descrição do Requisito | Responsável | Artefato Criado |
 |------|------------------------|------------|-----------------|
-|RF-001| O sistema deve permitir o cadastro de ambos prestadores de serviços e usuários normais. | Iago | cadastro.html |
+|RF-001| O sistema deve permitir o cadastro de ambos prestadores de serviços e usuários normais. | Iago | cadastro.html, authentication.js |
+|RF-003| O sistema deve possibilitar a organização da agenda de serviços e a disponibilidade do prestador responsável. | Hudson | painel.html agenda.js agenda.css |
 |RF-004| O sistema deve permitir a indexação de diferentes tipos de serviços a serem ofertados ao usuário. | Igor | servicos.html |
+|RF-009|O sistema deve permitir login de usuários cadastrados. | Josias | login.html, authentication.js |
 
 ## Descrição das estruturas:
 
@@ -34,3 +36,23 @@ As tabelas que se seguem apresentam os requisitos funcionais e não-funcionais q
 | Tipo Serviço | Texto | O tipo de serviço fornecido | Frete |
 | Estrelas | Numero (Inteiro) | Quantidade de estrelas que o profissional possui atráves das avaliaçãos de clientes | 3 |
 | Imagem | URL | Caminho da imagem de perfil. | ../assets/frete/profissional.jpg |
+
+### Sistema de Login / Cadastro
+
+#### Funcionalidades Desenvolvidas:
+- **Autenticação de usuários**: Validação de email e senha contra dados do localStorage
+- **Gerenciamento de sessão**: Controle de sessão ativa do usuário
+- **Validação de formulário**: Verificação de campos obrigatórios
+- **Redirecionamento automático**: Usuários logados redirecionados para servicos.html
+- **Prevenção de acesso**: Usuários não logados não acessam áreas restritas
+
+#### Validações Implementadas:
+- Verificação de campos vazios
+- Validação de credenciais contra base de usuários
+- Controle de sessão ativa
+
+#### Fluxo de Login:
+1. Verificação de sessão existente
+2. Validação de credenciais inseridas
+3. Criação de sessão em caso de sucesso
+4. Redirecionamento para área de serviços

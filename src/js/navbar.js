@@ -6,7 +6,7 @@ const info = document.querySelector('#navbar #info');
 if(loggedIn)
 {
     var user = JSON.parse(localStorage.getItem("sessionUser"));
-    var name = `${user.name.split(" ")[0]} ${user.name.split(" ")[1]}`;
+    var name = `${user.name.split(" ")[0]} ${user.name.split(" ")[1] ? user.name.split(" ")[1] : ''}`;
 
     info.innerHTML = `<div class="navbar-text label-navbar ms-auto d-flex align-items-center">
         Bem-vindo, ${name}

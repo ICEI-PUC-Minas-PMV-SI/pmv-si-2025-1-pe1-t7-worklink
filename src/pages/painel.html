@@ -1,96 +1,112 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="..\styles\painel.css">
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="..\styles\agenda.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
-  <title>Agenda</title>
+  <title>Agenda Interativa - WorkLink</title>
   <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
   <script type="module" src="../js/main.js"></script>
   <script type="module" src="../js/navbar.js"></script>
 </head>
 <body>
-
-  <div id="navbar" class="top-bar">
-    <img src="../assets/worklinklogo.png" class="logo" alt="Worklink Logo">
-    <div class="menu-container">
-      <a href="index.html" class="menu-item">Início</a>
-      <a href="servicos.html" class="menu-item">Serviços</a>
-      <a href="#" class="menu-item">Sobre</a>
-    </div>
-    <div id="info" class="buttons-container">
-      <a href="login.html" class="entrar-btn">Entrar</a>
-      <a href="cadastro.html" class="cadastrar-btn">Cadastrar</a>
+<header class="top-bar">
+  <img src="../assets/worklinklogo.png" class="logo" alt="Worklink Logo">
+  <nav class="menu-container">
+    <span class="menu-item">Início</span>
+    <span class="menu-item">Serviços</span>
+    <span class="menu-item">Sobre</span>
+  </nav>
+  <div class="user-container">
+    <span class="welcome-text">Bem-vindo, Hudson Gomes</span>
+    <img src="../assets/perfil.png  " class="user-icon" alt="Usuário">
+    <div class="notification-icon">
+      <img src="../assets/icons-notificação.png" alt="Notificações">
+      <span class="notification-badge" id="notificationCount">0</span>
     </div>
   </div>
+</header>
+
+<main>
+  <section class="agenda">
+    <h2>Agenda de Serviços</h2>
+    <div class="timeline">
+      <h3>Linha do Tempo</h3>
+      <p>Acompanhe seus serviços atuais.</p>
+      <div id="linhaDoTempoNova"></div>
+    </div>
+  </section>
+
+  <section class="calendar">
+    <h3>Calendário</h3>
+    <p>Controle seus dias com disponibilidade.</p>
+    <div class="calendar-grid">
+      <div>D</div><div>S</div><div>T</div><div>Q</div><div>Q</div><div>S</div><div>S</div>
+      <div class=>27</div>
+      <div class=>28</div>
+      <div class=>29</div>
+      <div class=>30</div>  
+      <div class=>31</div>
+      <div class="livre">01</div>
+      <div class="folga">02</div>
+      <div class="folga">03</div>
+      <div class="livre">04</div>
+      <div class="livre">05</div>
+      <div class="livre">06</div>
+      <div class="livre">07</div>
+      <div class="livre">08</div>
+      <div class="folga">09</div>
+      <div class="folga">10</div>
+      <div class="livre">11</div>
+      <div class="livre">12</div>
+      <div class="livre">13</div>
+      <div class="livre">14</div>
+      <div class="livre">15</div>
+      <div class="folga">16</div>
+      <div class="folga">17</div>
+      <div class="livre">18</div>
+      <div class="livre">19</div>
+      <div class="livre">20</div>
+      <div class="livre">21</div>
+      <div class="livre">22</div>
+      <div class="folga">23</div>
+      <div class="folga">24</div>
+      <div class="livre">25</div>
+      <div class="livre">26</div>
+      <div class="livre">27</div>
+      <div class="livre">28</div>
+      <div class="livre">29</div>
+      <div class="folga">30</div>
+      
+
+    </div>
+  </section>
+</main>
+
+<!-- Modal -->
+<div id="serviceModal" class="modal" style="display:none;">
+  <div class="modal-content">
+    <h3>Escolha o serviço para <span id="selectedDateText"></span>:</h3>
+    <select id="serviceSelect">
+      <option value="" disabled selected>Selecione um serviço</option>
+      <option value="Mecânico">Revisão de Motor</option>
+      <option value="Eletricista">Reparo de Fiação Residencial</option>
+      <option value="Chaveiro"> Abertura de Portas</option>
+      <option value="Desentupimento de Pia">Encanador</option>
+      <option value="Montagem de Móveis">Marido de Aluguel</option>
+      <option value="Fabricação de Prateleiras Sob Medida">Marcenaria</option>
+      <option value="Instalação de Torneira e Registro">Hidráulica</option>
+      <option value="Reboco de Parede">Alvenaria</option>
+      <option value="Pintura de Parede Interna">Pintura</option>
+      <option value="Mudança Residencial">Frete</option>
+    </select>
+
+    <button onclick="addService()">Confirmar</button>
+  </div>
+</div>
 
 
-  <main>
-    <section class="agenda">
-      <h2>Agenda de Serviços</h2>
-      <div class="timeline">
-        <h3>Linha do Tempo</h3>
-        <p>Acompanhe seus serviços atuais.</p>
-        <div class="service">
-          <div>
-            <strong>Segunda-feira, 15 de novembro de 2025</strong>
-            <p>Reparo elétrico</p>
-          </div>
-          <button class="chat-button">Chat</button>
-        </div>
-        <div class="service">
-          <div>
-            <strong>Quarta-feira, 18 de novembro de 2025</strong>
-            <p>Troca de lampadas</p> 
-          </div>
-          <button class="chat-button">Chat</button>
-        </div>
-      </div>
-    </section>
-
-    <section class="calendar">
-      <h3>Calendário</h3>
-      <p>Controle seus dias com disponibilidade.</p>
-      <div class="calendar-grid">
-        <div>D</div><div>S</div><div>T</div><div>Q</div><div>Q</div><div>S</div><div>S</div>
-        <div class="red">27</div>
-        <div class="green">28</div>
-        <div class="green">29</div> 
-        <div class="green">30</div>
-        <div class="green">31</div>
-        <div class="green">01</div>
-        <div class="red">02</div>
-        <div class="red">03</div>
-        <div class="green">04</div>
-        <div class="green">05</div>
-        <div class="green">06</div>
-        <div class="green">07</div>
-        <div class="green">08</div>
-        <div class="red">09</div>
-        <div class="red">10</div>
-        <div class="green">11</div>
-        <div class="green">12</div>
-        <div class="green">13</div>
-        <div class="green">14</div>
-        <div class="orange">15</div>
-        <div class="red">16</div>
-        <div class="red">17</div>
-        <div class="orange">18</div>
-        <div class="green">19</div>
-        <div class="green">20</div>
-        <div class="green">21</div>
-        <div class="green">22</div>
-        <div class="red">23</div>
-        <div class="red">24</div>
-        <div class="green">25</div>
-        <div class="green">26</div>
-        <div class="green">27</div>
-        <div class="green">28</div>
-        <div class="green">29</div>
-        <div class="red">30</div>
-      </div>
-    </section>
-  </main>
+<script src="../js/agenda.js"></script>
 </body>
 </html>
