@@ -577,3 +577,12 @@ a {
         right: -4px;
     }
 }
+
+#providers-list h5 {
+  color: #F18435;
+}
+
+#providers-list p {
+  color: rgba(0, 0, 0, 0.41);
+  font-weight: 600;
+}
