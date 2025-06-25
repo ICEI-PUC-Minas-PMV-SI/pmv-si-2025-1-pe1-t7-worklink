@@ -13,26 +13,26 @@ body {
   width: 100%;
   height: 96px;
   background-color: #F18435;
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.20); 
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.20);
   display: flex;
   align-items: center;
   padding-left: 40px;
   padding-right: 40px;
   position: relative;
-  z-index: 10; 
+  z-index: 10;
 }
 
 .logo {
   width: 110px;
   height: 100px;
   object-fit: contain;
-  margin-right: 40px; 
+  margin-right: 40px;
 }
 
 .menu-container {
   display: flex;
   gap: 40px;
-  margin-left: 20px; 
+  margin-left: 20px;
 }
 
 .menu-item {
@@ -88,7 +88,7 @@ body {
   flex: 1;
   width: 50%;
   background: #fff;
-  padding: 30px 0; 
+  padding: 30px 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -96,7 +96,7 @@ body {
 }
 
 .form-inner {
-  width: 380px; 
+  width: 380px;
 }
 
 .titulo-login {
@@ -104,7 +104,7 @@ body {
   font-size: 24px;
   font-weight: 700;
   margin-bottom: 12px;
-  text-align: left; 
+  text-align: left;
   width: 100%;
 }
 
@@ -331,16 +331,97 @@ button {
   font-weight: 700;
 }
 
+/* Onde a mágica acontece: estilizando o novo elemento de notificação */
+
+/* Contêiner que envolve a imagem de perfil e o ícone de notificação */
+.user-profile-and-notifications {
+    position: relative; /* Essencial para posicionar o badge e o ícone de notificação absolutamente em relação a ele */
+    display: flex; /* Para alinhar a imagem e o ícone de notificação */
+    align-items: center; /* Centraliza verticalmente a imagem e o ícone */
+    margin-left: 15px; /* Espaço entre o texto de boas-vindas e a imagem */
+}
+
+/* Estilos para a imagem de perfil DENTRO do novo contêiner */
+.user-profile-and-notifications img {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border: 3px solid #d36c1e; /* Cor da borda da imagem de perfil */
+    object-fit: cover;
+}
+
+/* Contêiner do ícone de notificação (o sino) */
+.notification-icon-navbar {
+    position: absolute; /* Posiciona o ícone de notificação sobre a imagem */
+    top: -8px; /* Ajuste para cima/baixo */
+    right: -8px; /* Ajuste para esquerda/direita (em relação ao .user-profile-and-notifications) */
+    width: 30px; /* Tamanho do ícone de notificação */
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1; /* Garante que fique acima da imagem de perfil */
+}
+
+.notification-icon-navbar img {
+    width: 100%; /* Faz a imagem do ícone preencher seu contêiner */
+    height: 100%;
+    object-fit: contain;
+}
+
+/* O badge numérico da notificação */
+.notification-badge-navbar {
+    position: absolute; /* Posiciona o badge sobre o ícone de notificação */
+    top: -5px; /* Ajuste conforme necessário, em relação ao .user-profile-and-notifications */
+    right: -5px; /* Ajuste conforme necessário */
+    background-color: red;
+    color: white;
+    font-size: 10px; /* Fonte menor para o badge */
+    border-radius: 50%;
+    padding: 2px 5px;
+    font-weight: bold;
+    min-width: 18px; /* Garante que seja um círculo mesmo com 1 dígito */
+    text-align: center;
+    line-height: 14px; /* Ajusta a altura da linha para centralizar o texto */
+    border: 1px solid white; /* Borda branca para destacar o badge */
+    z-index: 2; /* Garante que fique acima do ícone de notificação */
+}
+
+/* Removido o .label-navbar original, pois foi reestruturado no navbar.js */
+/* No seu HTML/JS anterior, o badge original estava dentro de um .notification-icon,
+   que por sua vez estava dentro do .user-container.
+   Agora, o .user-profile-and-notifications é o elemento pai dos itens de perfil/notificação. */
+
+/* Ajuste no .top-bar para alinhar o user-container à direita */
+.top-bar {
+    justify-content: space-between; /* Substitui padding-left/right por justify-content para espaçamento */
+    /* Remove a propriedade padding-left: 40px; e padding-right: 40px; se justify-content: space-between; for usado */
+    padding: 0 40px; /* Restaura o padding, mas com justify-content controla o espaçamento entre os principais blocos */
+}
+
+
+/* Ajustes para o contêiner de usuário no header */
+.user-container { /* Este é o contêiner geral do Bem-vindo, imagem e notificações */
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Espaçamento entre o "Bem-vindo," e o grupo de perfil/notificação */
+    margin-left: auto; /* Empurra todo o user-container para a direita */
+}
+
+
+/* Mantido para compatibilidade, mas os estilos específicos para o navbar agora estão acima */
 .label-navbar {
-  position: relative;
+  /* Pode ser ajustado ou removido se não for mais usado para este propósito */
+  position: relative; /* Mantido para garantir que qualquer filho absoluto funcione */
   font-size: 24px;
   letter-spacing: -0.02em;
-  display: inline-block;
+  display: inline-block; /* Ou flex, dependendo do que o navbar.js gera */
   color: rgba(0, 0, 0, 0.41);
   text-align: left;
   padding: 0 0 0 1rem;
   font-weight: 700;
 }
+
 
 .landing-banner {
   display: flex;
@@ -429,4 +510,70 @@ a {
 
 .card-icon img {
   max-height: 100px;
+}
+
+/* Adicionando media query para responsividade da navbar */
+@media (max-width: 768px) {
+    .top-bar {
+        padding: 0 15px;
+        flex-wrap: wrap; /* Permite que os itens quebrem a linha */
+        height: auto; /* Ajusta a altura automaticamente */
+        min-height: 96px; /* Garante uma altura mínima */
+    }
+
+    .logo {
+        width: 90px;
+        height: 80px;
+        margin-right: 15px;
+    }
+
+    .menu-container {
+        gap: 15px;
+        margin-left: 0;
+        justify-content: flex-start;
+        width: 100%; /* Permite que o menu ocupe toda a largura */
+        order: 3; /* Move o menu para baixo em telas pequenas */
+        margin-top: 10px; /* Adiciona um pouco de espaço acima do menu */
+    }
+
+    .menu-item {
+        font-size: 16px;
+    }
+
+    .user-container {
+        margin-left: auto; /* Mantém o alinhamento à direita */
+        order: 2; /* Posiciona o container de usuário após o logo */
+    }
+
+    .welcome-text {
+        font-size: 0.9em;
+    }
+
+    .entrar-btn, .cadastrar-btn {
+        width: auto;
+        height: 40px;
+        padding: 0 15px;
+        font-size: 16px;
+    }
+
+    /* Ajustes específicos para a notificação em telas pequenas se necessário */
+    .user-profile-and-notifications {
+        margin-left: 10px; /* Reduz o espaçamento em telas menores */
+    }
+
+    .notification-icon-navbar {
+        top: -6px;
+        right: -6px;
+        width: 25px;
+        height: 25px;
+    }
+
+    .notification-badge-navbar {
+        font-size: 9px;
+        padding: 1px 4px;
+        min-width: 16px;
+        line-height: 12px;
+        top: -4px;
+        right: -4px;
+    }
 }

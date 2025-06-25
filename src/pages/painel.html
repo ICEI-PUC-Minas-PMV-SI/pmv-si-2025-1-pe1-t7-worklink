@@ -1,112 +1,109 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-  <meta charset="UTF-8" />
-  <link rel="stylesheet" href="..\styles\agenda.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
-  <title>Agenda Interativa - WorkLink</title>
-  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-  <script type="module" src="../js/main.js"></script>
-  <script type="module" src="../js/navbar.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../styles/style.css"> <link rel="stylesheet" href="../styles/agenda.css"> <title>Agenda Interativa - WorkLink</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script type="module" src="../js/main.js"></script>
+    <script type="module" src="../js/navbar.js"></script>
 </head>
+
 <body>
-<header class="top-bar">
-  <img src="../assets/worklinklogo.png" class="logo" alt="Worklink Logo">
-  <nav class="menu-container">
-    <span class="menu-item">Início</span>
-    <span class="menu-item">Serviços</span>
-    <span class="menu-item">Sobre</span>
-  </nav>
-  <div class="user-container">
-    <span class="welcome-text">Bem-vindo, Hudson Gomes</span>
-    <img src="../assets/perfil.png  " class="user-icon" alt="Usuário">
-    <div class="notification-icon">
-      <img src="../assets/icons-notificação.png" alt="Notificações">
-      <span class="notification-badge" id="notificationCount">0</span>
+    <div id="navbar" class="top-bar">
+        <img src="../assets/worklinklogo.png" class="logo" alt="Worklink Logo">
+        <div class="menu-container">
+            <a href="index.html" class="menu-item">Início</a>
+            <a href="servicos.html" class="menu-item">Serviços</a>
+            <a href="#" class="menu-item">Sobre</a>
+        </div>
+        <div id="info" class="buttons-container">
+            <button class="entrar-btn">Entrar</button>
+            <button class="cadastrar-btn">Cadastrar</button>
+        </div>
+        </div>
+    <main>
+        <h1 id="trabalhadorNome" class="text-center mt-4"></h1>
+
+        <div class="content-wrapper">
+            <section class="agenda">
+                <h2>Linha do Tempo</h2>
+                <div class="timeline">
+                    <p>Acompanhe seus serviços atuais.</p>
+                    <div id="linhaDoTempoNova"></div>
+                </div>
+            </section>
+
+            <section class="calendar">
+                <h2>Calendário</h2>
+                <p>Controle seus dias com disponibilidade.</p>
+                <div class="calendar-grid">
+                    <div>D</div>
+                    <div>S</div>
+                    <div>T</div>
+                    <div>Q</div>
+                    <div>Q</div>
+                    <div>S</div>
+                    <div>S</div>
+                    <div>27</div>
+                    <div>28</div>
+                    <div>29</div>
+                    <div>30</div>
+                    <div>31</div>
+                    <div class="livre">01</div>
+                    <div class="folga">02</div>
+                    <div class="folga">03</div>
+                    <div class="livre">04</div>
+                    <div class="livre">05</div>
+                    <div class="livre">06</div>
+                    <div class="livre">07</div>
+                    <div class="livre">08</div>
+                    <div class="folga">09</div>
+                    <div class="folga">10</div>
+                    <div class="livre">11</div>
+                    <div class="livre">12</div>
+                    <div class="livre">13</div>
+                    <div class="livre">14</div>
+                    <div class="livre">15</div>
+                    <div class="folga">16</div>
+                    <div class="folga">17</div>
+                    <div class="livre">18</div>
+                    <div class="livre">19</div>
+                    <div class="livre">20</div>
+                    <div class="livre">21</div>
+                    <div class="livre">22</div>
+                    <div class="folga">23</div>
+                    <div class="folga">24</div>
+                    <div class="livre">25</div>
+                    <div class="livre">26</div>
+                    <div class="livre">27</div>
+                    <div class="livre">28</div>
+                    <div class="livre">29</div>
+                    <div class="folga">30</div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <div id="serviceModal" class="modal" style="display:none;">
+        <div class="modal-content">
+            <h3>Escolha o serviço para <span id="selectedDateText"></span>:</h3>
+            <p>Categoria: <strong id="modalCategoriaText"></strong></p>
+
+            <select id="serviceSelect">
+                <option value="" disabled selected>Selecione um serviço</option>
+            </select>
+
+            <button onclick="addService()">Confirmar</button>
+        </div>
     </div>
-  </div>
-</header>
 
-<main>
-  <section class="agenda">
-    <h2>Agenda de Serviços</h2>
-    <div class="timeline">
-      <h3>Linha do Tempo</h3>
-      <p>Acompanhe seus serviços atuais.</p>
-      <div id="linhaDoTempoNova"></div>
-    </div>
-  </section>
-
-  <section class="calendar">
-    <h3>Calendário</h3>
-    <p>Controle seus dias com disponibilidade.</p>
-    <div class="calendar-grid">
-      <div>D</div><div>S</div><div>T</div><div>Q</div><div>Q</div><div>S</div><div>S</div>
-      <div class=>27</div>
-      <div class=>28</div>
-      <div class=>29</div>
-      <div class=>30</div>  
-      <div class=>31</div>
-      <div class="livre">01</div>
-      <div class="folga">02</div>
-      <div class="folga">03</div>
-      <div class="livre">04</div>
-      <div class="livre">05</div>
-      <div class="livre">06</div>
-      <div class="livre">07</div>
-      <div class="livre">08</div>
-      <div class="folga">09</div>
-      <div class="folga">10</div>
-      <div class="livre">11</div>
-      <div class="livre">12</div>
-      <div class="livre">13</div>
-      <div class="livre">14</div>
-      <div class="livre">15</div>
-      <div class="folga">16</div>
-      <div class="folga">17</div>
-      <div class="livre">18</div>
-      <div class="livre">19</div>
-      <div class="livre">20</div>
-      <div class="livre">21</div>
-      <div class="livre">22</div>
-      <div class="folga">23</div>
-      <div class="folga">24</div>
-      <div class="livre">25</div>
-      <div class="livre">26</div>
-      <div class="livre">27</div>
-      <div class="livre">28</div>
-      <div class="livre">29</div>
-      <div class="folga">30</div>
-      
-
-    </div>
-  </section>
-</main>
-
-<!-- Modal -->
-<div id="serviceModal" class="modal" style="display:none;">
-  <div class="modal-content">
-    <h3>Escolha o serviço para <span id="selectedDateText"></span>:</h3>
-    <select id="serviceSelect">
-      <option value="" disabled selected>Selecione um serviço</option>
-      <option value="Mecânico">Revisão de Motor</option>
-      <option value="Eletricista">Reparo de Fiação Residencial</option>
-      <option value="Chaveiro"> Abertura de Portas</option>
-      <option value="Desentupimento de Pia">Encanador</option>
-      <option value="Montagem de Móveis">Marido de Aluguel</option>
-      <option value="Fabricação de Prateleiras Sob Medida">Marcenaria</option>
-      <option value="Instalação de Torneira e Registro">Hidráulica</option>
-      <option value="Reboco de Parede">Alvenaria</option>
-      <option value="Pintura de Parede Interna">Pintura</option>
-      <option value="Mudança Residencial">Frete</option>
-    </select>
-
-    <button onclick="addService()">Confirmar</button>
-  </div>
-</div>
-
-
-<script src="../js/agenda.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/agenda.js"></script>
 </body>
+
 </html>

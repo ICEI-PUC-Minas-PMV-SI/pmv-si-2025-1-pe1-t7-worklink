@@ -1,4 +1,4 @@
-import { WorkerUser } from './models.js';
+    import { WorkerUser } from './models.js';
 
 const listaFuncionarios = [
     // Mecânicos
@@ -8,7 +8,7 @@ const listaFuncionarios = [
 
     // Eletricistas
     new WorkerUser("Marcos Pereira", "marcos.pereira@email.com", "eletric123", "456.789.012-34", "Eletricista residencial e predial certificado.", "Eletricista", 5, "../assets/workerUser/eletricista/marcos_pereira.jpg"),
-    new WorkerUser("João Batista", "joao.batista@email.com", "eletric456", "567.890.123-45", "Instalação de chuveiros, luminárias e manutenção elétrica geral.", "Eletricista", 4, "../assets/workerUser/eletricista/joao_batista.jpg"),
+    new WorkerUser("João Batista", "joao.batista@email.com", "eletric456", "567.89  0.123-45", "Instalação de chuveiros, luminárias e manutenção elétrica geral.", "Eletricista", 4, "../assets/workerUser/eletricista/joao_batista.jpg"),
     new WorkerUser("Tiago Costa", "tiago.costa@email.com", "eletric789", "678.901.234-56", "Serviço rápido e seguro com garantia de qualidade.", "Eletricista", 3, "../assets/workerUser/eletricista/tiago_costa.jpg"),
 
     // Chaveiros
